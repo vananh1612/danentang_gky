@@ -145,6 +145,15 @@ class _ListProductScreenState extends State<ListProductScreen> {
                     );
                   },
                 ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Add your logout functionality here
+          Navigator.pushNamed(
+              context, '/login'); // Example navigation to login screen
+        },
+        child: Icon(Icons.logout),
+        backgroundColor: Colors.red, // Customize color if needed
+      ),
     );
   }
 
